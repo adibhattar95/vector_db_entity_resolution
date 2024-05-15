@@ -141,3 +141,15 @@ class SyntheticHelper:
                              'candidate_number']
         
         return merged_df
+    
+    def clean_commas(self, input_string):
+        # Remove leading and trailing commas
+        cleaned_string = input_string.strip(',')
+        
+        # Replace multiple consecutive commas with a single comma
+        cleaned_string = re.sub(r',+', ',', cleaned_string)
+        
+        # Remove commas followed by a space
+        cleaned_string = re.sub(r',\s', '', cleaned_string)
+        
+        return cleaned_string
