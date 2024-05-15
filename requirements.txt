@@ -1,0 +1,13 @@
+requests==2.27.1
+google-cloud-storage
+google-cloud-bigquery
+tqdm
+pandas
+numpy
+db-dtypes
+qdrant_client
+streamlit
+sentence-transformers
+tabulate
+faker
+nltk
