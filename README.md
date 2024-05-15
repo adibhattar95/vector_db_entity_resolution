@@ -22,11 +22,12 @@ Utilize precomputed vector distances derived from entity attributes to discern s
    pip install virtualenv
    virtualenv --python path/to/desired/python/executable/in/your/machine .venv
    ```⁠
+
 3.⁠ ⁠Activate the environment on Mac/Linux (Bash):
     ```
     source .venv/bin/activate
     ```
-     ⁠
+
     Activate the environment on Windows (PowerShell):
     
     ```
