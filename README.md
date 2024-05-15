@@ -18,27 +18,39 @@ Utilize precomputed vector distances derived from entity attributes to discern s
 1.⁠ ⁠Install pip if it is not already present on your machine: https://pip.pypa.io/en/stable/installation/
 2.⁠ ⁠Create a virtual environment by running:
     
-⁠     pip install virtualenv
+    ```
+⁠    pip install virtualenv
     virtualenv --python path/to/desired/python/executable/in/your/machine .venv
-     ⁠
+    ```
+         ⁠
 3.⁠ ⁠Activate the environment on Mac/Linux (Bash):
-    
-⁠     source .venv/bin/activate
+    ```
+    source .venv/bin/activate
+    ```
      ⁠
     Activate the environment on Windows (PowerShell):
     
-⁠     .\.venv\Scripts\activate
+    ```
+     .\.venv\Scripts\activate
+    ```
+⁠    
      ⁠
     Note: If you run into Windows permissions issues, it is probably because your Power Shell is restriced. Run your IDE/shell as an administrator and set your execution policy.
     https://www.mssqltips.com/sqlservertip/2702/setting-the-powershell-execution-policy/
 
 4.⁠ ⁠Install the project requirements
     
-⁠     pip install -r requirements.txt
+    ```
+    pip install -r requirements.txt
+    ```
+⁠     
      ⁠
 5.⁠ ⁠Deactivating the environment when you're all done coding:
     
-⁠     deactivate
+    ```
+    deactivate
+    ```
+⁠     
      ⁠
 
 ## Usage
@@ -47,8 +59,12 @@ Utilize precomputed vector distances derived from entity attributes to discern s
 
 Pull the docker image for Qdrant and get it running using the following two commands
 
+```
 docker pull qdrant/qdrant
+
 docker run -p 6333:6333 qdrant/qdrant
+
+```
 
 Run the synthetic_data_generation to create a bunch of entity pairs for entity resolution
 
@@ -59,4 +75,7 @@ Post that, run the demo notebook to run search queries on the vectorDB to return
 
 Can also test the matches by running the streamlit app (main.py)
 
+```
 streamlit run main.py
+```
+
